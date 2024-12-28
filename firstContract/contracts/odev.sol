@@ -19,6 +19,7 @@ function set_id(uint8 _id) public returns(bool){
      id= _id; 
      } else {
      require(msg.sender == owner , "this only owner write 42");
+     id=_id;
      }
      return true;
   } 
